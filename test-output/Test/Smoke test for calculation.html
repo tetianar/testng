@@ -1,0 +1,1295 @@
+<html>
+<head>
+<title>TestNG:  Smoke test for calculation</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Smoke test for calculation</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>51/16/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Nov 01 20:39:01 MSK 2016</td>
+</tr>
+<tr><td>Total time:</td><td>7 seconds (7270 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td>smoke </td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='businessObject.CalculatorTest.testCos()'><b>testCos</b><br>Test class: businessObject.CalculatorTest<br>Parameters: -565656.0, 0.9480811024049992<br/>
+<a href="#Output-1821459261" onClick='toggleBox("Output-1821459261", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1821459261" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1821459261">
+</br>Tue Nov 01 20:39:02 MSK 2016. Test faild: [Smoke test for calculation][businessObject.CalculatorTest][testCos]. Status <2>. Time duration <0>.<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: expected [0.9480811024049992] but found [0.3180286516377352]
+	at businessObject.CalculatorTest.testCos(CalculatorTest.java:81)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1821459261", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1821459261'><pre>java.lang.AssertionError: expected [0.9480811024049992] but found [0.3180286516377352]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:165)
+	at businessObject.CalculatorTest.testCos(CalculatorTest.java:81)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+</pre></div></td>
+<td>0</td>
+<td>businessObject.CalculatorTest@47d384ee</td></tr>
+<tr>
+<td title='businessObject.CalculatorTest.testCos()'><b>testCos</b><br>Test class: businessObject.CalculatorTest<br>Parameters: 0.0, 1.0<br/>
+<a href="#Output-750574634" onClick='toggleBox("Output-750574634", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-750574634" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-750574634">
+</br>Tue Nov 01 20:39:02 MSK 2016. Test faild: [Smoke test for calculation][businessObject.CalculatorTest][testCos]. Status <2>. Time duration <0>.<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: expected [1.0] but found [0.0]
+	at businessObject.CalculatorTest.testCos(CalculatorTest.java:81)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace750574634", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace750574634'><pre>java.lang.AssertionError: expected [1.0] but found [0.0]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:165)
+	at businessObject.CalculatorTest.testCos(CalculatorTest.java:81)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+</pre></div></td>
+<td>0</td>
+<td>businessObject.CalculatorTest@47d384ee</td></tr>
+<tr>
+<td title='businessObject.CalculatorTest.testCos()'><b>testCos</b><br>Test class: businessObject.CalculatorTest<br>Parameters: 20.56, -0.13919430405964572<br/>
+<a href="#Output-843147132" onClick='toggleBox("Output-843147132", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-843147132" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-843147132">
+</br>Tue Nov 01 20:39:02 MSK 2016. Test faild: [Smoke test for calculation][businessObject.CalculatorTest][testCos]. Status <2>. Time duration <31>.<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: expected [-0.13919430405964572] but found [0.9902650886087779]
+	at businessObject.CalculatorTest.testCos(CalculatorTest.java:81)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace843147132", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace843147132'><pre>java.lang.AssertionError: expected [-0.13919430405964572] but found [0.9902650886087779]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:165)
+	at businessObject.CalculatorTest.testCos(CalculatorTest.java:81)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+</pre></div></td>
+<td>0</td>
+<td>businessObject.CalculatorTest@47d384ee</td></tr>
+<tr>
+<td title='businessObject.CalculatorTest.testCos()'><b>testCos</b><br>Test class: businessObject.CalculatorTest<br>Parameters: 1.0, 0.5403023058681398<br/>
+<a href="#Output-310517015" onClick='toggleBox("Output-310517015", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-310517015" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-310517015">
+</br>Tue Nov 01 20:39:02 MSK 2016. Test faild: [Smoke test for calculation][businessObject.CalculatorTest][testCos]. Status <2>. Time duration <0>.<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: expected [0.5403023058681398] but found [0.8414709848078965]
+	at businessObject.CalculatorTest.testCos(CalculatorTest.java:81)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace310517015", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace310517015'><pre>java.lang.AssertionError: expected [0.5403023058681398] but found [0.8414709848078965]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:165)
+	at businessObject.CalculatorTest.testCos(CalculatorTest.java:81)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+</pre></div></td>
+<td>0</td>
+<td>businessObject.CalculatorTest@47d384ee</td></tr>
+<tr>
+<td title='businessObject.CalculatorTest.testCtg()'><b>testCtg</b><br>Test class: businessObject.CalculatorTest<br>Parameters: -565656.0, 2.981118517223813<br/>
+<a href="#Output-2034246267" onClick='toggleBox("Output-2034246267", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2034246267" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2034246267">
+</br>Tue Nov 01 20:39:02 MSK 2016. Test faild: [Smoke test for calculation][businessObject.CalculatorTest][testCtg]. Status <2>. Time duration <0>.<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: expected [2.981118517223813] but found [-1.0]
+	at businessObject.CalculatorTest.testCtg(CalculatorTest.java:76)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2034246267", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2034246267'><pre>java.lang.AssertionError: expected [2.981118517223813] but found [-1.0]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:165)
+	at businessObject.CalculatorTest.testCtg(CalculatorTest.java:76)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+</pre></div></td>
+<td>0</td>
+<td>businessObject.CalculatorTest@47d384ee</td></tr>
+<tr>
+<td title='businessObject.CalculatorTest.testCtg()'><b>testCtg</b><br>Test class: businessObject.CalculatorTest<br>Parameters: 20.56, -0.1405626691891154<br/>
+<a href="#Output-293006418" onClick='toggleBox("Output-293006418", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-293006418" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-293006418">
+</br>Tue Nov 01 20:39:02 MSK 2016. Test faild: [Smoke test for calculation][businessObject.CalculatorTest][testCtg]. Status <2>. Time duration <0>.<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: expected [-0.1405626691891154] but found [1.0]
+	at businessObject.CalculatorTest.testCtg(CalculatorTest.java:76)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace293006418", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace293006418'><pre>java.lang.AssertionError: expected [-0.1405626691891154] but found [1.0]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:165)
+	at businessObject.CalculatorTest.testCtg(CalculatorTest.java:76)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+</pre></div></td>
+<td>0</td>
+<td>businessObject.CalculatorTest@47d384ee</td></tr>
+<tr>
+<td title='businessObject.CalculatorTest.testIsPositive()'><b>testIsPositive</b><br>Test class: businessObject.CalculatorTest<br>Parameters: -555<br/>
+<a href="#Output-1654287534" onClick='toggleBox("Output-1654287534", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1654287534" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1654287534">
+</br>Tue Nov 01 20:39:02 MSK 2016. Test faild: [Smoke test for calculation][businessObject.CalculatorTest][testIsPositive]. Status <2>. Time duration <0>.<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at businessObject.CalculatorTest.testIsPositive(CalculatorTest.java:91)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1654287534", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1654287534'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at businessObject.CalculatorTest.testIsPositive(CalculatorTest.java:91)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+</pre></div></td>
+<td>0</td>
+<td>businessObject.CalculatorTest@47d384ee</td></tr>
+<tr>
+<td title='businessObject.CalculatorTest.testMultDouble()'><b>testMultDouble</b><br>Test class: businessObject.CalculatorTest<br>Parameters: 456789.2323, 6.258, 2740734.0, 1.0E-10<br/>
+<a href="#Output-194490136" onClick='toggleBox("Output-194490136", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-194490136" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-194490136">
+</br>Tue Nov 01 20:39:02 MSK 2016. Test faild: [Smoke test for calculation][businessObject.CalculatorTest][testMultDouble]. Status <2>. Time duration <0>.<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: expected [2740734.0] but found [2858587.0]
+	at businessObject.CalculatorTest.testMultDouble(CalculatorTest.java:46)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace194490136", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace194490136'><pre>java.lang.AssertionError: expected [2740734.0] but found [2858587.0]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:207)
+	at org.testng.Assert.assertEquals(Assert.java:220)
+	at businessObject.CalculatorTest.testMultDouble(CalculatorTest.java:46)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+</pre></div></td>
+<td>0</td>
+<td>businessObject.CalculatorTest@47d384ee</td></tr>
+<tr>
+<td title='businessObject.CalculatorTest.testMultDouble()'><b>testMultDouble</b><br>Test class: businessObject.CalculatorTest<br>Parameters: -5.213, -5.24, 25.0, 1.0E-10<br/>
+<a href="#Output-952818270" onClick='toggleBox("Output-952818270", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-952818270" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-952818270">
+</br>Tue Nov 01 20:39:02 MSK 2016. Test faild: [Smoke test for calculation][businessObject.CalculatorTest][testMultDouble]. Status <2>. Time duration <0>.<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: expected [25.0] but found [27.0]
+	at businessObject.CalculatorTest.testMultDouble(CalculatorTest.java:46)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace952818270", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace952818270'><pre>java.lang.AssertionError: expected [25.0] but found [27.0]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:207)
+	at org.testng.Assert.assertEquals(Assert.java:220)
+	at businessObject.CalculatorTest.testMultDouble(CalculatorTest.java:46)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+</pre></div></td>
+<td>0</td>
+<td>businessObject.CalculatorTest@47d384ee</td></tr>
+<tr>
+<td title='businessObject.CalculatorTest.testMultDouble()'><b>testMultDouble</b><br>Test class: businessObject.CalculatorTest<br>Parameters: 30.23, -5.23, -150.0, 1.0E-10<br/>
+<a href="#Output-265932854" onClick='toggleBox("Output-265932854", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-265932854" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-265932854">
+</br>Tue Nov 01 20:39:02 MSK 2016. Test faild: [Smoke test for calculation][businessObject.CalculatorTest][testMultDouble]. Status <2>. Time duration <0>.<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: expected [-150.0] but found [-159.0]
+	at businessObject.CalculatorTest.testMultDouble(CalculatorTest.java:46)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace265932854", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace265932854'><pre>java.lang.AssertionError: expected [-150.0] but found [-159.0]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:207)
+	at org.testng.Assert.assertEquals(Assert.java:220)
+	at businessObject.CalculatorTest.testMultDouble(CalculatorTest.java:46)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+</pre></div></td>
+<td>0</td>
+<td>businessObject.CalculatorTest@47d384ee</td></tr>
+<tr>
+<td title='businessObject.CalculatorTest.testMultDouble()'><b>testMultDouble</b><br>Test class: businessObject.CalculatorTest<br>Parameters: -8.23, 20.23, -160.0, 1.0E-10<br/>
+<a href="#Output-1948701625" onClick='toggleBox("Output-1948701625", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1948701625" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1948701625">
+</br>Tue Nov 01 20:39:02 MSK 2016. Test faild: [Smoke test for calculation][businessObject.CalculatorTest][testMultDouble]. Status <2>. Time duration <0>.<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: expected [-160.0] but found [-167.0]
+	at businessObject.CalculatorTest.testMultDouble(CalculatorTest.java:46)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1948701625", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1948701625'><pre>java.lang.AssertionError: expected [-160.0] but found [-167.0]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:207)
+	at org.testng.Assert.assertEquals(Assert.java:220)
+	at businessObject.CalculatorTest.testMultDouble(CalculatorTest.java:46)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+</pre></div></td>
+<td>0</td>
+<td>businessObject.CalculatorTest@47d384ee</td></tr>
+<tr>
+<td title='businessObject.CalculatorTest.testSubDouble()'><b>testSubDouble</b><br>Test class: businessObject.CalculatorTest<br>Parameters: -5.6562523E7, -456.0, -5.6562979E7, 1.0E-10<br/>
+<a href="#Output-794415816" onClick='toggleBox("Output-794415816", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-794415816" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-794415816">
+</br>Tue Nov 01 20:39:02 MSK 2016. Test faild: [Smoke test for calculation][businessObject.CalculatorTest][testSubDouble]. Status <2>. Time duration <0>.<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: expected [-5.6562979E7] but found [-5.6562067E7]
+	at businessObject.CalculatorTest.testSubDouble(CalculatorTest.java:36)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace794415816", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace794415816'><pre>java.lang.AssertionError: expected [-5.6562979E7] but found [-5.6562067E7]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:207)
+	at org.testng.Assert.assertEquals(Assert.java:220)
+	at businessObject.CalculatorTest.testSubDouble(CalculatorTest.java:36)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+</pre></div></td>
+<td>0</td>
+<td>businessObject.CalculatorTest@47d384ee</td></tr>
+<tr>
+<td title='businessObject.CalculatorTest.testSubLong()'><b>testSubLong</b><br>Test class: businessObject.CalculatorTest<br>Parameters: 9223372036854775807, 98, 9223372036854775807<br/>
+<a href="#Output-2133684367" onClick='toggleBox("Output-2133684367", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2133684367" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2133684367">
+</br>Tue Nov 01 20:39:02 MSK 2016. Test faild: [Smoke test for calculation][businessObject.CalculatorTest][testSubLong]. Status <2>. Time duration <0>.<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: expected [9223372036854775807] but found [9223372036854775709]
+	at businessObject.CalculatorTest.testSubLong(CalculatorTest.java:30)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 15 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2133684367", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2133684367'><pre>java.lang.AssertionError: expected [9223372036854775807] but found [9223372036854775709]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:265)
+	at org.testng.Assert.assertEquals(Assert.java:275)
+	at businessObject.CalculatorTest.testSubLong(CalculatorTest.java:30)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+</pre></div></td>
+<td>0</td>
+<td>businessObject.CalculatorTest@47d384ee</td></tr>
+<tr>
+<td title='businessObject.CalculatorTest.testSubLong()'><b>testSubLong</b><br>Test class: businessObject.CalculatorTest<br>Parameters: -56562523, -456, 56562979<br/>
+<a href="#Output-1431005118" onClick='toggleBox("Output-1431005118", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1431005118" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1431005118">
+</br>Tue Nov 01 20:39:02 MSK 2016. Test faild: [Smoke test for calculation][businessObject.CalculatorTest][testSubLong]. Status <2>. Time duration <15>.<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: expected [56562979] but found [-56562067]
+	at businessObject.CalculatorTest.testSubLong(CalculatorTest.java:30)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 15 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1431005118", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1431005118'><pre>java.lang.AssertionError: expected [56562979] but found [-56562067]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:265)
+	at org.testng.Assert.assertEquals(Assert.java:275)
+	at businessObject.CalculatorTest.testSubLong(CalculatorTest.java:30)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+</pre></div></td>
+<td>0</td>
+<td>businessObject.CalculatorTest@47d384ee</td></tr>
+<tr>
+<td title='businessObject.CalculatorTest.testSubLong()'><b>testSubLong</b><br>Test class: businessObject.CalculatorTest<br>Parameters: 412341234123, -412341234123, 0<br/>
+<a href="#Output-2102010514" onClick='toggleBox("Output-2102010514", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2102010514" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2102010514">
+</br>Tue Nov 01 20:39:02 MSK 2016. Test faild: [Smoke test for calculation][businessObject.CalculatorTest][testSubLong]. Status <2>. Time duration <0>.<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: expected [0] but found [824682468246]
+	at businessObject.CalculatorTest.testSubLong(CalculatorTest.java:30)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 15 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2102010514", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2102010514'><pre>java.lang.AssertionError: expected [0] but found [824682468246]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:265)
+	at org.testng.Assert.assertEquals(Assert.java:275)
+	at businessObject.CalculatorTest.testSubLong(CalculatorTest.java:30)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+</pre></div></td>
+<td>0</td>
+<td>businessObject.CalculatorTest@47d384ee</td></tr>
+<tr>
+<td title='businessObject.CalculatorTest.testSubLong()'><b>testSubLong</b><br>Test class: businessObject.CalculatorTest<br>Parameters: -555555555555555, 5, 555555555555550<br/>
+<a href="#Output-1781022246" onClick='toggleBox("Output-1781022246", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1781022246" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1781022246">
+</br>Tue Nov 01 20:39:02 MSK 2016. Test faild: [Smoke test for calculation][businessObject.CalculatorTest][testSubLong]. Status <2>. Time duration <0>.<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: expected [555555555555550] but found [-555555555555560]
+	at businessObject.CalculatorTest.testSubLong(CalculatorTest.java:30)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 15 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1781022246", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1781022246'><pre>java.lang.AssertionError: expected [555555555555550] but found [-555555555555560]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:265)
+	at org.testng.Assert.assertEquals(Assert.java:275)
+	at businessObject.CalculatorTest.testSubLong(CalculatorTest.java:30)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+</pre></div></td>
+<td>0</td>
+<td>businessObject.CalculatorTest@47d384ee</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='businessObject.CalculatorTest.testDivLong()'><b>testDivLong</b><br>Test class: businessObject.CalculatorTest<br>Parameters: 5, 1, 5<br/>
+<a href="#Output-1060739933" onClick='toggleBox("Output-1060739933", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1060739933" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1060739933">
+</br>Tue Nov 01 20:39:02 MSK 2016. Test passed: [Smoke test for calculation][businessObject.CalculatorTest][testDivLong]. Status <1>. Time duration <0>.<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>businessObject.CalculatorTest@47d384ee</td></tr>
+<tr>
+<td title='businessObject.CalculatorTest.testDivLong()'><b>testDivLong</b><br>Test class: businessObject.CalculatorTest<br>Parameters: -566, 656, 0<br/>
+<a href="#Output-1979157295" onClick='toggleBox("Output-1979157295", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1979157295" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1979157295">
+</br>Tue Nov 01 20:39:02 MSK 2016. Test passed: [Smoke test for calculation][businessObject.CalculatorTest][testDivLong]. Status <1>. Time duration <16>.<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>businessObject.CalculatorTest@47d384ee</td></tr>
+<tr>
+<td title='businessObject.CalculatorTest.testDivLong()'><b>testDivLong</b><br>Test class: businessObject.CalculatorTest<br>Parameters: 5547, -555, -9<br/>
+<a href="#Output-30658401" onClick='toggleBox("Output-30658401", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-30658401" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-30658401">
+</br>Tue Nov 01 20:39:02 MSK 2016. Test passed: [Smoke test for calculation][businessObject.CalculatorTest][testDivLong]. Status <1>. Time duration <0>.<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>businessObject.CalculatorTest@47d384ee</td></tr>
+<tr>
+<td title='businessObject.CalculatorTest.testDivLong()'><b>testDivLong</b><br>Test class: businessObject.CalculatorTest<br>Parameters: -5466, -565, 9<br/>
+<a href="#Output-1223154167" onClick='toggleBox("Output-1223154167", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1223154167" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1223154167">
+</br>Tue Nov 01 20:39:02 MSK 2016. Test passed: [Smoke test for calculation][businessObject.CalculatorTest][testDivLong]. Status <1>. Time duration <0>.<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>businessObject.CalculatorTest@47d384ee</td></tr>
+<tr>
+<td title='businessObject.CalculatorTest.testIsNegative()'><b>testIsNegative</b><br>Test class: businessObject.CalculatorTest<br>Parameters: -555<br/>
+<a href="#Output-308066378" onClick='toggleBox("Output-308066378", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-308066378" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-308066378">
+</br>Tue Nov 01 20:39:02 MSK 2016. Test passed: [Smoke test for calculation][businessObject.CalculatorTest][testIsNegative]. Status <1>. Time duration <31>.<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>businessObject.CalculatorTest@47d384ee</td></tr>
+<tr>
+<td title='businessObject.CalculatorTest.testIsPositive()'><b>testIsPositive</b><br>Test class: businessObject.CalculatorTest<br>Parameters: 32223<br/>
+<a href="#Output-1557312951" onClick='toggleBox("Output-1557312951", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1557312951" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1557312951">
+</br>Tue Nov 01 20:39:02 MSK 2016. Test passed: [Smoke test for calculation][businessObject.CalculatorTest][testIsPositive]. Status <1>. Time duration <52>.<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>businessObject.CalculatorTest@47d384ee</td></tr>
+<tr>
+<td title='businessObject.CalculatorTest.testMultDouble()'><b>testMultDouble</b><br>Test class: businessObject.CalculatorTest<br>Parameters: 0.0, -5.6565656562E9, 0.0, 1.0E-10<br/>
+<a href="#Output-1807241303" onClick='toggleBox("Output-1807241303", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1807241303" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1807241303">
+</br>Tue Nov 01 20:39:02 MSK 2016. Test passed: [Smoke test for calculation][businessObject.CalculatorTest][testMultDouble]. Status <1>. Time duration <0>.<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>businessObject.CalculatorTest@47d384ee</td></tr>
+<tr>
+<td title='businessObject.CalculatorTest.testMultDouble()'><b>testMultDouble</b><br>Test class: businessObject.CalculatorTest<br>Parameters: 0.0, 0.0, 0.0, 1.0E-10<br/>
+<a href="#Output-1511619771" onClick='toggleBox("Output-1511619771", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1511619771" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1511619771">
+</br>Tue Nov 01 20:39:02 MSK 2016. Test passed: [Smoke test for calculation][businessObject.CalculatorTest][testMultDouble]. Status <1>. Time duration <0>.<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>businessObject.CalculatorTest@47d384ee</td></tr>
+<tr>
+<td title='businessObject.CalculatorTest.testMultDouble()'><b>testMultDouble</b><br>Test class: businessObject.CalculatorTest<br>Parameters: 4.65467468465464E17, 0.0, 0.0, 1.0E-10<br/>
+<a href="#Output-579107319" onClick='toggleBox("Output-579107319", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-579107319" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-579107319">
+</br>Tue Nov 01 20:39:02 MSK 2016. Test passed: [Smoke test for calculation][businessObject.CalculatorTest][testMultDouble]. Status <1>. Time duration <0>.<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>businessObject.CalculatorTest@47d384ee</td></tr>
+<tr>
+<td title='businessObject.CalculatorTest.testMultLong()'><b>testMultLong</b><br>Test class: businessObject.CalculatorTest<br>Parameters: 0, -5656565656, 0<br/>
+<a href="#Output-1572525765" onClick='toggleBox("Output-1572525765", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1572525765" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1572525765">
+</br>Tue Nov 01 20:39:02 MSK 2016. Test passed: [Smoke test for calculation][businessObject.CalculatorTest][testMultLong]. Status <1>. Time duration <0>.<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>businessObject.CalculatorTest@47d384ee</td></tr>
+<tr>
+<td title='businessObject.CalculatorTest.testMultLong()'><b>testMultLong</b><br>Test class: businessObject.CalculatorTest<br>Parameters: 0, 0, 0<br/>
+<a href="#Output-1764439018" onClick='toggleBox("Output-1764439018", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1764439018" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1764439018">
+</br>Tue Nov 01 20:39:02 MSK 2016. Test passed: [Smoke test for calculation][businessObject.CalculatorTest][testMultLong]. Status <1>. Time duration <0>.<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>businessObject.CalculatorTest@47d384ee</td></tr>
+<tr>
+<td title='businessObject.CalculatorTest.testMultLong()'><b>testMultLong</b><br>Test class: businessObject.CalculatorTest<br>Parameters: 465467468465464000, 0, 0<br/>
+<a href="#Output-706730174" onClick='toggleBox("Output-706730174", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-706730174" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-706730174">
+</br>Tue Nov 01 20:39:02 MSK 2016. Test passed: [Smoke test for calculation][businessObject.CalculatorTest][testMultLong]. Status <1>. Time duration <0>.<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>businessObject.CalculatorTest@47d384ee</td></tr>
+<tr>
+<td title='businessObject.CalculatorTest.testMultLong()'><b>testMultLong</b><br>Test class: businessObject.CalculatorTest<br>Parameters: 456789, 6, 2740734<br/>
+<a href="#Output-1335364193" onClick='toggleBox("Output-1335364193", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1335364193" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1335364193">
+</br>Tue Nov 01 20:39:02 MSK 2016. Test passed: [Smoke test for calculation][businessObject.CalculatorTest][testMultLong]. Status <1>. Time duration <0>.<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>businessObject.CalculatorTest@47d384ee</td></tr>
+<tr>
+<td title='businessObject.CalculatorTest.testMultLong()'><b>testMultLong</b><br>Test class: businessObject.CalculatorTest<br>Parameters: -5, -5, 25<br/>
+<a href="#Output-1564868839" onClick='toggleBox("Output-1564868839", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1564868839" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1564868839">
+</br>Tue Nov 01 20:39:02 MSK 2016. Test passed: [Smoke test for calculation][businessObject.CalculatorTest][testMultLong]. Status <1>. Time duration <0>.<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>businessObject.CalculatorTest@47d384ee</td></tr>
+<tr>
+<td title='businessObject.CalculatorTest.testMultLong()'><b>testMultLong</b><br>Test class: businessObject.CalculatorTest<br>Parameters: 30, -5, -150<br/>
+<a href="#Output-1841482950" onClick='toggleBox("Output-1841482950", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1841482950" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1841482950">
+</br>Tue Nov 01 20:39:02 MSK 2016. Test passed: [Smoke test for calculation][businessObject.CalculatorTest][testMultLong]. Status <1>. Time duration <0>.<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>businessObject.CalculatorTest@47d384ee</td></tr>
+<tr>
+<td title='businessObject.CalculatorTest.testMultLong()'><b>testMultLong</b><br>Test class: businessObject.CalculatorTest<br>Parameters: -8, 20, -160<br/>
+<a href="#Output-969679848" onClick='toggleBox("Output-969679848", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-969679848" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-969679848">
+</br>Tue Nov 01 20:39:02 MSK 2016. Test passed: [Smoke test for calculation][businessObject.CalculatorTest][testMultLong]. Status <1>. Time duration <47>.<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>businessObject.CalculatorTest@47d384ee</td></tr>
+<tr>
+<td title='businessObject.CalculatorTest.testPow()'><b>testPow</b><br>Test class: businessObject.CalculatorTest<br>Parameters: 4.65467468465464E17, 0.0, 1.0<br/>
+<a href="#Output-191889797" onClick='toggleBox("Output-191889797", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-191889797" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-191889797">
+</br>Tue Nov 01 20:39:02 MSK 2016. Test passed: [Smoke test for calculation][businessObject.CalculatorTest][testPow]. Status <1>. Time duration <53>.<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>businessObject.CalculatorTest@47d384ee</td></tr>
+<tr>
+<td title='businessObject.CalculatorTest.testPow()'><b>testPow</b><br>Test class: businessObject.CalculatorTest<br>Parameters: 456789.0, 6.0, 9.08434924831199E33<br/>
+<a href="#Output-1373196765" onClick='toggleBox("Output-1373196765", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1373196765" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1373196765">
+</br>Tue Nov 01 20:39:02 MSK 2016. Test passed: [Smoke test for calculation][businessObject.CalculatorTest][testPow]. Status <1>. Time duration <0>.<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>businessObject.CalculatorTest@47d384ee</td></tr>
+<tr>
+<td title='businessObject.CalculatorTest.testPow()'><b>testPow</b><br>Test class: businessObject.CalculatorTest<br>Parameters: -5.0, -5.0, -3.2E-4<br/>
+<a href="#Output-1831257561" onClick='toggleBox("Output-1831257561", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1831257561" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1831257561">
+</br>Tue Nov 01 20:39:02 MSK 2016. Test passed: [Smoke test for calculation][businessObject.CalculatorTest][testPow]. Status <1>. Time duration <0>.<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>businessObject.CalculatorTest@47d384ee</td></tr>
+<tr>
+<td title='businessObject.CalculatorTest.testPow()'><b>testPow</b><br>Test class: businessObject.CalculatorTest<br>Parameters: 30.0, -5.0, 4.11522633744856E-8<br/>
+<a href="#Output-1117373172" onClick='toggleBox("Output-1117373172", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1117373172" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1117373172">
+</br>Tue Nov 01 20:39:02 MSK 2016. Test passed: [Smoke test for calculation][businessObject.CalculatorTest][testPow]. Status <1>. Time duration <16>.<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>businessObject.CalculatorTest@47d384ee</td></tr>
+<tr>
+<td title='businessObject.CalculatorTest.testPow()'><b>testPow</b><br>Test class: businessObject.CalculatorTest<br>Parameters: -8.0, 20.0, 1.15292150460684698E18<br/>
+<a href="#Output-1231982347" onClick='toggleBox("Output-1231982347", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1231982347" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1231982347">
+</br>Tue Nov 01 20:39:02 MSK 2016. Test passed: [Smoke test for calculation][businessObject.CalculatorTest][testPow]. Status <1>. Time duration <0>.<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>businessObject.CalculatorTest@47d384ee</td></tr>
+<tr>
+<td title='businessObject.CalculatorTest.testSin()'><b>testSin</b><br>Test class: businessObject.CalculatorTest<br>Parameters: -5656.0, -0.9057828422998849<br/>
+<a href="#Output-313327174" onClick='toggleBox("Output-313327174", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-313327174" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-313327174">
+</br>Tue Nov 01 20:39:02 MSK 2016. Test passed: [Smoke test for calculation][businessObject.CalculatorTest][testSin]. Status <1>. Time duration <0>.<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>businessObject.CalculatorTest@47d384ee</td></tr>
+<tr>
+<td title='businessObject.CalculatorTest.testSin()'><b>testSin</b><br>Test class: businessObject.CalculatorTest<br>Parameters: 0.0, 0.0<br/>
+<a href="#Output-1163493516" onClick='toggleBox("Output-1163493516", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1163493516" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1163493516">
+</br>Tue Nov 01 20:39:02 MSK 2016. Test passed: [Smoke test for calculation][businessObject.CalculatorTest][testSin]. Status <1>. Time duration <0>.<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>businessObject.CalculatorTest@47d384ee</td></tr>
+<tr>
+<td title='businessObject.CalculatorTest.testSin()'><b>testSin</b><br>Test class: businessObject.CalculatorTest<br>Parameters: 20.56, 0.9902650886087779<br/>
+<a href="#Output-1237307026" onClick='toggleBox("Output-1237307026", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1237307026" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1237307026">
+</br>Tue Nov 01 20:39:02 MSK 2016. Test passed: [Smoke test for calculation][businessObject.CalculatorTest][testSin]. Status <1>. Time duration <0>.<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>businessObject.CalculatorTest@47d384ee</td></tr>
+<tr>
+<td title='businessObject.CalculatorTest.testSin()'><b>testSin</b><br>Test class: businessObject.CalculatorTest<br>Parameters: 1.0, 0.8414709848078965<br/>
+<a href="#Output-1413942760" onClick='toggleBox("Output-1413942760", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1413942760" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1413942760">
+</br>Tue Nov 01 20:39:02 MSK 2016. Test passed: [Smoke test for calculation][businessObject.CalculatorTest][testSin]. Status <1>. Time duration <0>.<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>businessObject.CalculatorTest@47d384ee</td></tr>
+<tr>
+<td title='businessObject.CalculatorTest.testSqrt()'><b>testSqrt</b><br>Test class: businessObject.CalculatorTest<br>Parameters: 0.0, 0.0<br/>
+<a href="#Output-34195684" onClick='toggleBox("Output-34195684", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-34195684" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-34195684">
+</br>Tue Nov 01 20:39:02 MSK 2016. Test passed: [Smoke test for calculation][businessObject.CalculatorTest][testSqrt]. Status <1>. Time duration <0>.<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>businessObject.CalculatorTest@47d384ee</td></tr>
+<tr>
+<td title='businessObject.CalculatorTest.testSqrt()'><b>testSqrt</b><br>Test class: businessObject.CalculatorTest<br>Parameters: 6.0, 2.449489742783178<br/>
+<a href="#Output-1385021732" onClick='toggleBox("Output-1385021732", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1385021732" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1385021732">
+</br>Tue Nov 01 20:39:02 MSK 2016. Test passed: [Smoke test for calculation][businessObject.CalculatorTest][testSqrt]. Status <1>. Time duration <0>.<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>businessObject.CalculatorTest@47d384ee</td></tr>
+<tr>
+<td title='businessObject.CalculatorTest.testSqrt()'><b>testSqrt</b><br>Test class: businessObject.CalculatorTest<br>Parameters: 20.56, 4.534313619501853<br/>
+<a href="#Output-1094723204" onClick='toggleBox("Output-1094723204", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1094723204" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1094723204">
+</br>Tue Nov 01 20:39:02 MSK 2016. Test passed: [Smoke test for calculation][businessObject.CalculatorTest][testSqrt]. Status <1>. Time duration <0>.<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>businessObject.CalculatorTest@47d384ee</td></tr>
+<tr>
+<td title='businessObject.CalculatorTest.testSubDouble()'><b>testSubDouble</b><br>Test class: businessObject.CalculatorTest<br>Parameters: 0.0, 0.0, 0.0, 1.0E-10<br/>
+<a href="#Output-1886369223" onClick='toggleBox("Output-1886369223", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1886369223" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1886369223">
+</br>Tue Nov 01 20:39:02 MSK 2016. Test passed: [Smoke test for calculation][businessObject.CalculatorTest][testSubDouble]. Status <1>. Time duration <53>.<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>businessObject.CalculatorTest@47d384ee</td></tr>
+<tr>
+<td title='businessObject.CalculatorTest.testSubDouble()'><b>testSubDouble</b><br>Test class: businessObject.CalculatorTest<br>Parameters: 0.0, -4.654564564E9, 4.654564564E9, 1.0E-10<br/>
+<a href="#Output-201960237" onClick='toggleBox("Output-201960237", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-201960237" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-201960237">
+</br>Tue Nov 01 20:39:02 MSK 2016. Test passed: [Smoke test for calculation][businessObject.CalculatorTest][testSubDouble]. Status <1>. Time duration <0>.<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>businessObject.CalculatorTest@47d384ee</td></tr>
+<tr>
+<td title='businessObject.CalculatorTest.testSubDouble()'><b>testSubDouble</b><br>Test class: businessObject.CalculatorTest<br>Parameters: 5.4646546546E10, 0.0, 5.4646546546E10, 1.0E-10<br/>
+<a href="#Output-1755290640" onClick='toggleBox("Output-1755290640", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1755290640" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1755290640">
+</br>Tue Nov 01 20:39:02 MSK 2016. Test passed: [Smoke test for calculation][businessObject.CalculatorTest][testSubDouble]. Status <1>. Time duration <0>.<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>businessObject.CalculatorTest@47d384ee</td></tr>
+<tr>
+<td title='businessObject.CalculatorTest.testSubDouble()'><b>testSubDouble</b><br>Test class: businessObject.CalculatorTest<br>Parameters: 9.89898989898989E19, 98.0, 9.89898989898989E19, 1.0E-10<br/>
+<a href="#Output-580225744" onClick='toggleBox("Output-580225744", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-580225744" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-580225744">
+</br>Tue Nov 01 20:39:02 MSK 2016. Test passed: [Smoke test for calculation][businessObject.CalculatorTest][testSubDouble]. Status <1>. Time duration <16>.<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>businessObject.CalculatorTest@47d384ee</td></tr>
+<tr>
+<td title='businessObject.CalculatorTest.testSubDouble()'><b>testSubDouble</b><br>Test class: businessObject.CalculatorTest<br>Parameters: 4.12341234123E11, 4.12341234123E11, 0.0, 1.0E-10<br/>
+<a href="#Output-2057513480" onClick='toggleBox("Output-2057513480", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2057513480" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2057513480">
+</br>Tue Nov 01 20:39:02 MSK 2016. Test passed: [Smoke test for calculation][businessObject.CalculatorTest][testSubDouble]. Status <1>. Time duration <31>.<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>businessObject.CalculatorTest@47d384ee</td></tr>
+<tr>
+<td title='businessObject.CalculatorTest.testSubDouble()'><b>testSubDouble</b><br>Test class: businessObject.CalculatorTest<br>Parameters: -5.55555555555555E14, 5.0, -5.5555555555556E14, 1.0E-10<br/>
+<a href="#Output-1953426566" onClick='toggleBox("Output-1953426566", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1953426566" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1953426566">
+</br>Tue Nov 01 20:39:02 MSK 2016. Test passed: [Smoke test for calculation][businessObject.CalculatorTest][testSubDouble]. Status <1>. Time duration <0>.<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>businessObject.CalculatorTest@47d384ee</td></tr>
+<tr>
+<td title='businessObject.CalculatorTest.testSubLong()'><b>testSubLong</b><br>Test class: businessObject.CalculatorTest<br>Parameters: 0, 0, 0<br/>
+<a href="#Output-127256350" onClick='toggleBox("Output-127256350", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-127256350" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-127256350">
+</br>Tue Nov 01 20:39:02 MSK 2016. Test passed: [Smoke test for calculation][businessObject.CalculatorTest][testSubLong]. Status <1>. Time duration <0>.<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>businessObject.CalculatorTest@47d384ee</td></tr>
+<tr>
+<td title='businessObject.CalculatorTest.testSubLong()'><b>testSubLong</b><br>Test class: businessObject.CalculatorTest<br>Parameters: 0, -4654564564, 4654564564<br/>
+<a href="#Output-1491820865" onClick='toggleBox("Output-1491820865", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1491820865" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1491820865">
+</br>Tue Nov 01 20:39:02 MSK 2016. Test passed: [Smoke test for calculation][businessObject.CalculatorTest][testSubLong]. Status <1>. Time duration <21>.<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>businessObject.CalculatorTest@47d384ee</td></tr>
+<tr>
+<td title='businessObject.CalculatorTest.testSubLong()'><b>testSubLong</b><br>Test class: businessObject.CalculatorTest<br>Parameters: 54646546546, 0, 54646546546<br/>
+<a href="#Output-1759152991" onClick='toggleBox("Output-1759152991", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1759152991" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1759152991">
+</br>Tue Nov 01 20:39:02 MSK 2016. Test passed: [Smoke test for calculation][businessObject.CalculatorTest][testSubLong]. Status <1>. Time duration <0>.<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>businessObject.CalculatorTest@47d384ee</td></tr>
+<tr>
+<td title='businessObject.CalculatorTest.testSumDouble()'><b>testSumDouble</b><br>Test class: businessObject.CalculatorTest<br>Parameters: -564.25, 564.25, 0.0, 1.0E-10<br/>
+<a href="#Output-166138404" onClick='toggleBox("Output-166138404", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-166138404" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-166138404">
+</br>Tue Nov 01 20:39:02 MSK 2016. Test passed: [Smoke test for calculation][businessObject.CalculatorTest][testSumDouble]. Status <1>. Time duration <0>.<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>businessObject.CalculatorTest@47d384ee</td></tr>
+<tr>
+<td title='businessObject.CalculatorTest.testSumDouble()'><b>testSumDouble</b><br>Test class: businessObject.CalculatorTest<br>Parameters: 1000.05, 250.5, 1250.55, 1.0E-10<br/>
+<a href="#Output-1090490805" onClick='toggleBox("Output-1090490805", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1090490805" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1090490805">
+</br>Tue Nov 01 20:39:02 MSK 2016. Test passed: [Smoke test for calculation][businessObject.CalculatorTest][testSumDouble]. Status <1>. Time duration <0>.<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>businessObject.CalculatorTest@47d384ee</td></tr>
+<tr>
+<td title='businessObject.CalculatorTest.testSumDouble()'><b>testSumDouble</b><br>Test class: businessObject.CalculatorTest<br>Parameters: 1500.50005, -500.0, 1000.50005, 1.0E-10<br/>
+<a href="#Output-637201811" onClick='toggleBox("Output-637201811", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-637201811" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-637201811">
+</br>Tue Nov 01 20:39:02 MSK 2016. Test passed: [Smoke test for calculation][businessObject.CalculatorTest][testSumDouble]. Status <1>. Time duration <0>.<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>businessObject.CalculatorTest@47d384ee</td></tr>
+<tr>
+<td title='businessObject.CalculatorTest.testSumDouble()'><b>testSumDouble</b><br>Test class: businessObject.CalculatorTest<br>Parameters: -800.2, -200.4, -1000.6, 1.0E-10<br/>
+<a href="#Output-570205546" onClick='toggleBox("Output-570205546", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-570205546" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-570205546">
+</br>Tue Nov 01 20:39:02 MSK 2016. Test passed: [Smoke test for calculation][businessObject.CalculatorTest][testSumDouble]. Status <1>. Time duration <0>.<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>businessObject.CalculatorTest@47d384ee</td></tr>
+<tr>
+<td title='businessObject.CalculatorTest.testSumDouble()'><b>testSumDouble</b><br>Test class: businessObject.CalculatorTest<br>Parameters: 0.0, 0.0, 0.0, 1.0E-10<br/>
+<a href="#Output-272360771" onClick='toggleBox("Output-272360771", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-272360771" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-272360771">
+</br>Tue Nov 01 20:39:02 MSK 2016. Test passed: [Smoke test for calculation][businessObject.CalculatorTest][testSumDouble]. Status <1>. Time duration <16>.<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>businessObject.CalculatorTest@47d384ee</td></tr>
+<tr>
+<td title='businessObject.CalculatorTest.testSumDouble()'><b>testSumDouble</b><br>Test class: businessObject.CalculatorTest<br>Parameters: 0.0, 5656.25852, 5656.25852, 1.0E-10<br/>
+<a href="#Output-754302152" onClick='toggleBox("Output-754302152", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-754302152" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-754302152">
+</br>Tue Nov 01 20:39:02 MSK 2016. Test passed: [Smoke test for calculation][businessObject.CalculatorTest][testSumDouble]. Status <1>. Time duration <0>.<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>businessObject.CalculatorTest@47d384ee</td></tr>
+<tr>
+<td title='businessObject.CalculatorTest.testSumDouble()'><b>testSumDouble</b><br>Test class: businessObject.CalculatorTest<br>Parameters: -989898.232325787, 0.0, -989898.232325787, 1.0E-10<br/>
+<a href="#Output-1578195632" onClick='toggleBox("Output-1578195632", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1578195632" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1578195632">
+</br>Tue Nov 01 20:39:02 MSK 2016. Test passed: [Smoke test for calculation][businessObject.CalculatorTest][testSumDouble]. Status <1>. Time duration <0>.<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>businessObject.CalculatorTest@47d384ee</td></tr>
+<tr>
+<td title='businessObject.CalculatorTest.testSumLong()'><b>testSumLong</b><br>Test class: businessObject.CalculatorTest<br>Parameters: -500000, 0, -500000<br/>
+<a href="#Output-345551655" onClick='toggleBox("Output-345551655", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-345551655" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-345551655">
+</br>Tue Nov 01 20:39:03 MSK 2016. Test passed: [Smoke test for calculation][businessObject.CalculatorTest][testSumLong]. Status <1>. Time duration <1009>.<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>businessObject.CalculatorTest@47d384ee</td></tr>
+<tr>
+<td title='businessObject.CalculatorTest.testSumLong()'><b>testSumLong</b><br>Test class: businessObject.CalculatorTest<br>Parameters: 9223372036854775807, 0, 9223372036854775807<br/>
+<a href="#Output-295197327" onClick='toggleBox("Output-295197327", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-295197327" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-295197327">
+</br>Tue Nov 01 20:39:04 MSK 2016. Test passed: [Smoke test for calculation][businessObject.CalculatorTest][testSumLong]. Status <1>. Time duration <1006>.<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>businessObject.CalculatorTest@47d384ee</td></tr>
+<tr>
+<td title='businessObject.CalculatorTest.testSumLong()'><b>testSumLong</b><br>Test class: businessObject.CalculatorTest<br>Parameters: 15, 20, 35<br/>
+<a href="#Output-1938955002" onClick='toggleBox("Output-1938955002", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1938955002" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1938955002">
+</br>Tue Nov 01 20:39:05 MSK 2016. Test passed: [Smoke test for calculation][businessObject.CalculatorTest][testSumLong]. Status <1>. Time duration <1001>.<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>businessObject.CalculatorTest@47d384ee</td></tr>
+<tr>
+<td title='businessObject.CalculatorTest.testSumLong()'><b>testSumLong</b><br>Test class: businessObject.CalculatorTest<br>Parameters: -1250, -50, -1300<br/>
+<a href="#Output-1916145274" onClick='toggleBox("Output-1916145274", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1916145274" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1916145274">
+</br>Tue Nov 01 20:39:06 MSK 2016. Test passed: [Smoke test for calculation][businessObject.CalculatorTest][testSumLong]. Status <1>. Time duration <1015>.<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>businessObject.CalculatorTest@47d384ee</td></tr>
+<tr>
+<td title='businessObject.CalculatorTest.testSumLong()'><b>testSumLong</b><br>Test class: businessObject.CalculatorTest<br>Parameters: 0, 0, 0<br/>
+<a href="#Output-602311312" onClick='toggleBox("Output-602311312", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-602311312" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-602311312">
+</br>Tue Nov 01 20:39:07 MSK 2016. Test passed: [Smoke test for calculation][businessObject.CalculatorTest][testSumLong]. Status <1>. Time duration <1001>.<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>businessObject.CalculatorTest@47d384ee</td></tr>
+<tr>
+<td title='businessObject.CalculatorTest.testSumLong()'><b>testSumLong</b><br>Test class: businessObject.CalculatorTest<br>Parameters: -878787, 878787, 0<br/>
+<a href="#Output-1887039553" onClick='toggleBox("Output-1887039553", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1887039553" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1887039553">
+</br>Tue Nov 01 20:39:08 MSK 2016. Test passed: [Smoke test for calculation][businessObject.CalculatorTest][testSumLong]. Status <1>. Time duration <1001>.<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>businessObject.CalculatorTest@47d384ee</td></tr>
+<tr>
+<td title='businessObject.CalculatorTest.testSumLong()'><b>testSumLong</b><br>Test class: businessObject.CalculatorTest<br>Parameters: 595959595959, -59, 595959595900<br/>
+<a href="#Output-333410686" onClick='toggleBox("Output-333410686", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-333410686" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-333410686">
+</br>Tue Nov 01 20:39:09 MSK 2016. Test passed: [Smoke test for calculation][businessObject.CalculatorTest][testSumLong]. Status <1>. Time duration <1006>.<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>businessObject.CalculatorTest@47d384ee</td></tr>
+</table><p>
+</body>
+</html>

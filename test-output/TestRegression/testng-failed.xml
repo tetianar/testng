@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" name="Failed suite [TestRegression]" parallel="methods">
+  <test name="Regression test for calculation(failed)" parallel="methods">
+    <groups>
+      <run>
+        <include name="regression"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="businessObject.CalculatorTest">
+        <methods>
+          <include name="testCtg" invocation-numbers="0 1"/>
+          <include name="testSqrtWhenNumLessZero" invocation-numbers="0"/>
+          <include name="testSubLong" invocation-numbers="3 4 5 6"/>
+          <include name="testMultDouble" invocation-numbers="3 4 5 6"/>
+          <include name="beforeClass"/>
+          <include name="testDivOnZeroDouble" invocation-numbers="0 1 2"/>
+          <include name="testTg" invocation-numbers="0 1 2"/>
+          <include name="testIsPositive" invocation-numbers="1"/>
+          <include name="testSubDouble" invocation-numbers="4"/>
+          <include name="testCtgFromZero" invocation-numbers="0"/>
+          <include name="testPowNumZeroAndPowLessZero" invocation-numbers="0"/>
+          <include name="testIsNegWithPositiveNumber" invocation-numbers="0"/>
+          <include name="testCos" invocation-numbers="0 1 2 3"/>
+          <include name="testDivOnZeroLong" invocation-numbers="0 1 2"/>
+        </methods>
+      </class> <!-- businessObject.CalculatorTest -->
+    </classes>
+  </test> <!-- Regression test for calculation(failed) -->
+</suite> <!-- Failed suite [TestRegression] -->
