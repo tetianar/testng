@@ -122,6 +122,36 @@ public class CalculatorTest extends TestBase {
         calculator.ctg(a);
     }
 
+    @Test (dataProvider = "testDataLong", groups = {"regression","longType"}, dataProviderClass = DataProviderClass.class, expectedExceptions = StackOverflowError.class)
+    public void testSumOverflowLong(long a, long b) {
+        calculator.sum(a,b);
+    }
+
+    @Test (dataProvider = "testDataDouble", groups = {"regression","doubleType"}, dataProviderClass = DataProviderClass.class, expectedExceptions = StackOverflowError.class)
+    public void testSumOverflowDouble(double a, double b) {
+       calculator.sum(a,b);
+    }
+
+    @Test (dataProvider = "testDataLong", groups = {"regression","longType"}, dataProviderClass = DataProviderClass.class, expectedExceptions = StackOverflowError.class)
+    public void testDivOverflowLong(long a, long b) {
+        calculator.div(a,b);
+    }
+
+    @Test (dataProvider = "testDataDouble", groups = {"regression","doubleType"}, dataProviderClass = DataProviderClass.class, expectedExceptions = StackOverflowError.class)
+    public void testDivOverflowDouble(double a, double b) {
+        calculator.div(a,b);
+    }
+
+    @Test (dataProvider = "testDataLong", groups = {"regression","longType"}, dataProviderClass = DataProviderClass.class, expectedExceptions = StackOverflowError.class)
+    public void testMultOverflowLong(long a, long b) {
+        calculator.mult(a,b);
+    }
+
+    @Test (dataProvider = "testDataDouble", groups = {"regression","doubleType"}, dataProviderClass = DataProviderClass.class, expectedExceptions = StackOverflowError.class)
+    public void testMultOverflowDouble(double a, double b) {
+        calculator.mult(a,b);
+    }
+
     @Test (dataProvider = "testDataLong", groups = {"regression","longType"}, dataProviderClass = DataProviderClass.class)
     public void testIsPosWithNegativeNumber(long a) {
         Assert.assertFalse(calculator.isPositive(a));
