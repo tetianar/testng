@@ -83,7 +83,7 @@
 
 	<suiteXmlFiles>
 
-	<suiteXmlFile>${resourcePath}testWithThreads.xml</suiteXmlFile>
+	<suiteXmlFile>${resourcePath}TestRegression.xml</suiteXmlFile>
 
 	<!--<suiteXmlFile>${resourcePath}testng.xml</suiteXmlFile>-->
 
